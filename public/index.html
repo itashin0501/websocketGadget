@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="https://foursheets.work/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: transparent;
+      }
+      .konvajs-content {
+        background: transparent;
+      }
+      #app {
+        background: transparent;
+      }
+    </style>
+    <script>
+      // function getUrlQueries() {
+      //   var queryStr = window.location.search.slice(1); // 文頭?を除外
+      //   queries = {};
+
+      //   // クエリがない場合は空のオブジェクトを返す
+      //   if (!queryStr) {
+      //     return queries;
+      //   }
+
+      //   // クエリ文字列を & で分割して処理
+      //   queryStr.split('&').forEach(function(queryStr) {
+      //     // = で分割してkey,valueをオブジェクトに格納
+      //     var queryArr = queryStr.split('=');
+      //     queries[queryArr[0]] = queryArr[1];
+      //   });
+
+      //   return queries;
+      // }
+      // console.log(getUrlQueries().bg);
+      // var elem = document.getElementById('app');
+      // console.log(elem.style.backgroundColor);
+      // elem.style.backgroundColor = '#' + getUrlQueries().bg;
+    </script>
   </head>
   <body>
     <noscript>
